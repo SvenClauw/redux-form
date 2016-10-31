@@ -295,7 +295,7 @@ const createReduxForm =
               return promise
             }
             this.submitPromise = promise
-            return promise.then(this.submitCompleted, submitCompleted)
+            return promise.then(this.submitCompleted, this.submitCompleted)
           }
 
           submit(submitOrEvent) {
